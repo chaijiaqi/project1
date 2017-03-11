@@ -1,0 +1,261 @@
+@charset "utf-8";
+.html,.body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    z-index: 100;
+}
+.header .nav{
+    width: 80%;
+    margin: 0 auto;
+    height: 30px;
+}
+.header .logo{
+    width: 75px;
+    height: 30px;
+    background: url("../i/hh/indexlogo.png") no-repeat;
+    background-size: 75px;
+}
+.header .login span{
+    font: 12px/30px "微软雅黑";
+    color: #BFBFBF;
+}
+.header .login a{
+    font: 12px/30px "微软雅黑";
+    color: #ffffff;
+}
+.header .login a:hover{
+    color: #00BBEE;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    min-height: 500px;
+    top: 0;
+    bottom: 70px;
+    left: 0;
+}
+.content .bg{
+    width: 100%;
+    height: 100%;
+}
+.content .bg div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.content .bg1{
+    background: url("../i/hh/indexbg-3.jpg") center center no-repeat;
+    opacity: 1;
+}
+.content .bg2{
+    background: url("../i/hh/indexbg-2.jpg") center center no-repeat;
+    opacity: 0;
+}
+.content .bg3{
+    background: url("../i/hh/indexbg-1.jpg") center center no-repeat;
+    opacity: 0;
+}
+.content .linkbox{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    height: 270px;
+    width: 600px;
+    margin-left: -300px;
+}
+.content .link{
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+}
+.icon001{
+    display: inline-block;
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    background: #00a3ee;
+    position: absolute;
+}
+.icon002{
+    display: inline-block;
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    background: #00a3ee;
+    position: absolute;
+    left: 210px;
+}
+.icon003{
+    display: inline-block;
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    background: #00a3ee;
+    position: absolute;
+    left: 420px;
+}
+.icon001:hover{
+    background: #00bbee;
+}
+.icon002:hover{
+    background: #00bbee;
+}
+.icon003:hover{
+    background: #00bbee;
+}
+.content .link .icon01{
+    height: 50px;
+    width: 170px;
+    display: inline-block;
+    line-height: 40px;
+
+}
+.content .link .icon02{
+    height: 50px;
+    width: 170px;
+    display: inline-block;
+    line-height: 40px;
+}
+.content .link .icon03{
+    height: 50px;
+    width: 170px;
+    display: inline-block;
+    line-height: 40px;
+}
+.icon01 .icon1{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background: url("../i/hh/index开发者.png") center center no-repeat;
+    background-size: 23px;
+    line-height: 50px;
+    position: relative;
+    left: 20px;
+    top: 7px;
+}
+.icon02 .icon2{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background: url("../i/hh/index商家.png") center center no-repeat;
+    background-size: 23px;
+    line-height: 50px;
+    position: relative;
+    left: 20px;
+    top: 7px;
+}
+.icon03 .icon3{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background: url("../i/hh/index个人.png") center center no-repeat;
+    background-size: 23px;
+    line-height: 50px;
+    position: relative;
+    left: 20px;
+    top: 7px;
+}
+.wenzi{
+    color: #fff;
+    font: 400 14px/14px "微软雅黑";
+    position: relative;
+    left: 22px;
+    bottom:4px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    z-index: 8;
+}
+.footer00{
+    width: 794px;
+    margin: 5px auto;
+}
+.footer01 li{
+    float: left;
+    color: #666;
+    font: 400 12px "微软雅黑";
+    margin-left: 4px;
+}
+.footer01 li a{
+    color: #666;
+}
+.footer001{
+    width: 264px;
+    margin: 5px auto;
+    color: #666;
+}
+.last{
+    width: 270px;
+    margin: 0 auto;
+    transform: scale(.7,.7);
+}
+.last ul li{
+    display: inline-block;
+    float: left;
+    margin: 0 8px;
+}
+.lasted00{
+    height: 30px;
+    width: 30px;
+    background: url("../i/hh/jinglingtu.png") -2px -69px;
+}
+.lasted01{
+    height: 30px;
+    width: 64px;
+    background: url("../i/hh/jinglingtu.png") -69px -20px;
+}
+.lasted02{
+    height: 30px;
+    width: 52px;
+    background: url("../i/hh/jinglingtu.png") -149px -21px;
+}
+.lasted03{
+    height: 30px;
+    width: 22px;
+    background: url("../i/hh/jinglingtu.png") -230px -22px;
+}
+.lasted04{
+    height: 30px;
+    width: 22px;
+    background: url("../i/hh/jinglingtu.png") -393px -23px;
+}
+.lasted00:hover{
+    height: 30px;
+    width: 30px;
+    background: url("../i/hh/jinglingtu.png") -4px -24px;
+}
+.lasted01:hover{
+    height: 30px;
+    width: 64px;
+    background: url("../i/hh/jinglingtu.png") -67px -65px;
+}
+.lasted02:hover{
+    height: 30px;
+    width: 52px;
+    background: url("../i/hh/jinglingtu.png") -147px -66px;
+}
+.lasted03:hover{
+    height: 30px;
+    width: 22px;
+    background: url("../i/hh/jinglingtu.png") -228px -67px;
+}
+.lasted04:hover{
+    height: 30px;
+    width: 22px;
+    background: url("../i/hh/jinglingtu.png") -393px -63px;
+}

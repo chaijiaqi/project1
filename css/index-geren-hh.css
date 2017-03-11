@@ -1,0 +1,683 @@
+@charset "utf-8";
+html, body, #animatebox, .li {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 108px;
+    z-index: 1;
+}
+
+.bannerone {
+    height: 28px;
+    width: 100%;
+    background-color: #1E1B29;
+}
+
+.bannerone .fr {
+    position: relative;
+}
+
+.bannerone a {
+    margin: 0px 12px;
+    font: 12px/28px "微软雅黑";
+    color: #ffffff;
+}
+
+.bannerone .fl .first {
+    margin-left: 0px;
+    color: #00BBEE;
+}
+
+.bannerone a:hover {
+    color: #00BBEE;
+}
+
+.bannerone .fr a {
+    margin: 0 10px;
+}
+
+.bannerone .fr span {
+    display: block;
+    color: #ffffff;
+    font: 12px/28px "微软雅黑";;
+    margin: 0 0px;
+}
+
+.bannerone .fr .last {
+    display: inline-block;
+    height: 22px;
+    margin: 6px 5px 0 10px;
+}
+
+.bannerone .fr .last a {
+    line-height: 16px;
+    margin: 0;
+}
+
+.bannerone .fr s {
+    margin-left: 3px;
+    display: inline-block;
+    border-width: 5px 5px 0 5px;
+    border-color: #ffffff rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-style: solid;
+    transition: 0.5s all;
+}
+
+.bannerone .fr .last:hover s {
+    transform: rotateZ(180deg);
+    transition: 0.5s all;
+}
+
+.bannerone .fr .last ul {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    height: 90px;
+    width: 80px;
+    padding-top: 4px;
+    background-color: #fff;
+    border: 1px solid #F0F1F2;
+    border-top: none;
+    display: none;
+}
+
+.bannerone .fr .last ul a {
+    display: block;
+    height: 28px;
+    width: 80px;
+    font: 12px/28px "微软雅黑";
+    color: #5E5E5E;
+    text-align: center;
+}
+
+.bannerone .fr .last ul a:hover {
+    color: #00BBEE;
+}
+
+.bannerone .fr .last:hover ul {
+    display: block;
+}
+
+.bannertow {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px #eeeeee solid;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.bannertow .logo {
+    margin-top: 20px;
+    height: 40px;
+    width: 114px;
+    background: url("../i/hh/logo.png") no-repeat;
+}
+
+.bannertow .nav {
+    height: 80px;
+    width: 840px;
+    margin-left: 246px;
+}
+
+.bannertow .nav > ul > li {
+    position: relative;
+    float: left;
+    height: 80px;
+}
+
+.bannertow .nav > ul > li > a {
+    padding: 0 30px;
+    font: 16px/80px "微软雅黑";
+    color: #333333;
+}
+
+.bannertow .nav > ul > li > a:hover, .bannertow .nav > ul > li > .first {
+    color: #00bbee;
+}
+
+.bannertow .nav .navlogin {
+    margin-top: 25px;
+    text-align: center;
+    height: 28px;
+    width: 138px;
+}
+
+.bannertow .nav .dl {
+    display: inline-block;
+    width: 84px;
+    background-color: #00bbee;
+    font: 14px/28px "微软雅黑";
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+.bannertow .nav .dl:hover {
+    background-color: #00a3d2;
+}
+
+.bannertow .nav .zc {
+    font: 12px/28px "微软雅黑";
+    color: #00bbee;
+}
+
+.bannertow .nav i {
+    float: left;
+    height: 16px;
+    width: 1px;
+    margin-top: 32px;
+    margin-left: 20px;
+    margin-right: 19px;
+    background-color: #444;
+}
+
+.bannertow .nav .navm {
+    display: none;
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 100%;
+    padding: 0 5px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(128, 128, 128, 0.5);
+}
+
+.bannertow .nav .navm .closenavm {
+    height: 80px;
+    width: 100%;
+    background: url("../i/hh/close.png") center center no-repeat;
+    background-size: 26px;
+    cursor: pointer;
+}
+
+.bannertow .nav .navm ul {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.bannertow .nav .navm li {
+    width: 100%;
+}
+
+.bannertow .nav .navm li a {
+    display: block;
+    font: 14px/28px "微软雅黑";
+    color: #333;
+    padding: 0 5px;
+    margin: 0 -5px;
+}
+
+.bannertow .nav .navm li a:hover {
+    color: #ffffff;
+    background-color: #00bbee;
+}
+
+.bannertow .nav .navm .name {
+    height: 80px;
+    width: 100%;
+    font: 16px/80px "微软雅黑";
+    border-top: 1px solid #eeeeee;
+    color: #999;
+}
+
+.li {
+    overflow: hidden;
+    position: relative;
+}
+
+.li .footerbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.li .footerbar .w {
+    height: 48px;
+    padding-top: 12px;
+}
+
+.product {
+    position: relative;
+    height: 36px;
+}
+
+.product i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 31px;
+}
+
+.product .tips {
+    margin-left: 42px;
+    border-left: 1px solid #b5b5b5;
+    padding-left: 12px;
+}
+
+.product .tips p {
+    font: 16px/16px "微软雅黑";
+    color: #ffffff;
+}
+
+.product .tips span {
+    display: inline-block;
+    font: 12px/12px "微软雅黑";
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.product.zzfk, .product.smfk, .product.gjys, .product.zdgd, .pro.gh {
+    margin-left: 40px;
+}
+
+.product.smfk, .product.fkmfk, .product.gjys, .product.ppzp {
+    width: 455px;
+}
+
+.product.sbfk, .product.rmb, .product.lhbx, .product.ckbg {
+    width: 250px;
+}
+
+.product.zdgd, .product.aqbz, .product.mdfb, .product.gh, .product.zndz, .product.fyyf {
+    width: 300px;
+}
+
+.zzfk i {
+    background-image: url(../i/hh/转账.png);
+}
+
+.smfk i {
+    background-image: url(../i/hh/扫描.png);
+    background-size: 36px;
+}
+
+.fkmfk i {
+    background-image: url(../i/hh/付款码.png);
+}
+
+.sbfk i {
+    background-image: url(../i/hh/商家声波支付.png);
+}
+
+.gjys i {
+    background-image: url(../i/hh/国际运输.png);
+}
+
+.ppzp i {
+    background-image: url(../i/hh/icon正品.png);
+    background-size: 26px;
+}
+
+.rmb i {
+    background-image: url(../i/hh/人民币付款.png);
+}
+
+.zdgd i {
+    background-image: url(../i/hh/赚多.png);
+}
+
+.aqbz i {
+    background-image: url(../i/hh/安全保障.png);
+}
+
+.mdfb i {
+    background-image: url(../i/hh/一键购买.png);
+}
+
+.lhbx i {
+    background-image: url(../i/hh/变现.png);
+}
+
+.gh i {
+    background-image: url(../i/hh/挂号.png);
+}
+
+.zndz i {
+    background-image: url(../i/hh/智能导诊.png);
+}
+
+.fyyf i {
+    background-image: url(../i/hh/付医药费.png);
+}
+
+.ckbg i {
+    background-image: url(../i/hh/查看报告.png);
+}
+
+.ol li {
+    width: 11px;
+    height: 11px;
+    margin: 7px 0;
+    border-radius: 50%;
+    border: 1px solid #BBBBBC;
+    cursor: pointer;
+}
+
+.ol {
+    width: 11px;
+    height: 133px;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    margin-top: -33px;
+}
+
+.xiala {
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    bottom: 83px;
+    left: 50%;
+    margin-left: -14px;
+    background: url(../i/hh/下拉.png) no-repeat;
+    cursor: pointer;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+video {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.li1 img, .li2 img, .li3 img, .li4 img, .li5 img, .li6 img {
+    position: absolute;
+}
+
+.li .bg, .li .bg1 {
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.li .bg2 {
+    position: relative;
+    height: 100%;
+}
+
+.li1 .bg {
+    background: url("../i/hh/bg1.jpg") center center no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.li1 .bgp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000000;
+    opacity: 0.35;
+}
+
+.li1 .login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -195px;
+    margin-top: -40px;
+    width: 420px;
+    height: 200px;
+}
+
+.li1 .login .text {
+    width: 420px;
+    height: 88px;
+    margin-bottom: 10px;
+    background: url("../i/hh/text1.png") -10px 0 no-repeat;
+}
+
+.li1 .login .fl {
+    width: 186px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #00bbee;
+    font: 14px/30px "微软雅黑";
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.li1 .login .a1 {
+    margin-right: 20px;
+    border-color: #00bbee;
+}
+
+.li1 .login .a1:hover {
+    background-color: #00a3d2;
+    border-color: #00a3d2;
+}
+
+.li1 .login .a2 {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.li1 .player {
+    position: absolute;
+    display: none;
+    right: -40px;
+    top: 35px;
+    height: 36px;
+    width: 36px;
+    background: url("../i/hh/playbutton.png") no-repeat;
+    background-size: 92%;
+}
+
+.li2 .bg1 {
+    background: url("../i/hh/bg2.jpg") center center no-repeat;
+    background-size: cover;
+    transform: scale(1.02, 1.02);
+    transition: 0.1s all;
+}
+
+.animate .li2 .bg1 {
+    transform: scale(1, 1);
+    transition: 3s;
+}
+
+.li2 .bg2 .ren {
+    left: 50%;
+    margin-left: -120px;
+    bottom: 0;
+}
+
+.li2 .bg2 .y1 {
+    right: -5%;
+    top: 5%;
+    width: 400px;
+}
+
+.li2 .bg2 .y2 {
+    width: 224px;
+    left: 5%;
+    top: 150px;
+}
+
+.li2 .bg2 .y3 {
+    width: 600px;
+    right: 10%;
+    top: 10%;
+}
+
+.li2 .bg2 .y4 {
+    left: 30%;
+    top: 55%;
+    width: 120px;
+}
+
+.li2 .bg2 .text {
+    left: 18%;
+    top: 35%;
+    width: 315px;
+    opacity: 0;
+    transition: 0.1s opacity;
+}
+
+.animate .li2 .bg2 .text {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.li3 .bg1 {
+    background: url("../i/hh/bg3.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.li3 .bg2 .qiang {
+    top: -440px;
+    left: -500px;
+    transition: .1s all;
+}
+
+.animate .li3 .bg2 .qiang {
+    left: 2%;
+    top: -100px;
+    width: 500px;
+    transition: .5s .5s all;
+}
+
+.li3 .bg2 .shou {
+    left: 50%;
+    top: 100%;
+    transtion: .1s all;
+}
+
+.animate .li3 .bg2 .shou {
+    left: 12%;
+    top: 460px;
+    width: 1600px;
+    transition: .5s all;
+}
+
+.li3 .bg2 .text {
+    opacity: 0;
+    left: 50%;
+    top: 300px;
+    width: 345px;
+    transition: .1s all;
+}
+
+.animate .li3 .bg2 .text {
+    opacity: 1;
+    transition: 1s 1.2s all;
+}
+
+.li4 .bg1 {
+    background: url("../i/hh/bg4.jpg") center center no-repeat;
+    background-size: cover;
+    transform: scale(1, 1);
+    transition: .1s transform;
+}
+
+.animate .li4 .bg1 {
+    transform: scale(1.1, 1.1);
+    transition: 15s transform;
+}
+
+.li4 .bg2 .text {
+    left: 13%;
+    top: 30%;
+    width: 355px;
+    opacity: 0;
+    transition: 0.1s all;
+}
+
+.animate .li4 .bg2 .text {
+    opacity: 1;
+    transition: 1s 1s all;
+}
+
+.li5 .bg1 {
+    background: url("../i/hh/bg5.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.li5 .bg1 .bg1_1 {
+    background: #2D0E0E;
+    opacity: 0;
+    transition: 0.1s all;
+}
+
+.animate .li5 .bg1 .bg1_1 {
+    opacity: 0.6;
+    transition: 2s 2s all;
+}
+
+.li5 .bg2 .text {
+    right: 18%;
+    top: 30%;
+    width: 300px;
+    opacity: 0;
+    transition: .1s all;
+}
+
+.animate .li5 .bg2 .text {
+    opacity: 1;
+    transition: 2s all;
+}
+
+.li6 .bg1 {
+    background: url("../i/hh/bg6.jpg") center center no-repeat;
+    background-size: cover;
+    transform: scale(1.1, 1.1);
+    transition: 0.1s;
+}
+
+.animate .li6 .bg1 {
+    transform: scale(1, 1);
+    transition: 15s;
+}
+
+.li6 .bg2 .text {
+    left: 100px;
+    top: 30%;
+    width: 300px;
+    opacity: 0;
+    transition: 0.1s all;
+}
+
+.animate .li6 .bg2 .text {
+    opacity: 1;
+    transition: 2s all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
